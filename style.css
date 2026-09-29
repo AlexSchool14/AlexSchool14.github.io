@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --navy: #081926; 
+    --dark-blue: #173950; 
+    --blue: #4FA3D1; 
+    --light-blue: #8CC9E8; 
+    --gold: #C6A15B; 
+    --light-gold: #E0C27A; 
+    --white: #E8E6DF; 
+    --gray: #AEB8BF; 
+    --card-gray: #3A4A57;
+}
+
+
+/*General*/ 
+
+body { 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    color: var(--navy); 
+    background-color: var(--white); 
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    font-size: 5rem;
+}
+
+h2 {
+    margin-top: 0;
+    line-height: 1.2;
+    font-size: 3rem;
+}
+
+h3 {
+    color: black;
+    margin-top: 0;
+    line-height: 1.2;
+    font-size: 2rem;
+}
+
+p {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+a { 
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Nav Bar*/
+
+header { 
+    background-color: var(--navy); 
+    position: sticky; 
+    padding: 0.5%;
+    top: 0;
+}
+
+nav { 
+    min-height: 70px; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+
+}
+
+nav a { 
+    color: var(--white); 
+    font-size: 1.3rem; 
+    letter-spacing: 5px; 
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: var(--white); 
+    padding: 8px 0; 
+    border-bottom: 2px solid transparent;
+    font-size: 0.9rem;
+}
+
+nav ul li a:hover {
+    color: var(--light-blue); 
+    border-bottom-color: var(--gold);
+}
+
+/*Home*/
+#home {
+    background-color: var(--navy);
+}
+#HeroBanner {
+    min-height: 550px;
+    
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url("../images/SunsetMountian.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+}
+
+.pretitle {
+    margin-bottom: 0.75rem;
+
+    color: var(--gold);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+#subtitle {
+    color: var(--blue);
+    margin-top: 0px;
+}
+
+#home p span {
+        display: inline;
+        margin: 10px;
+        color: var(--gray);
+    }
+
+#home p {
+    max-width: 600px;
+}
+
+.buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 1.3rem;
+    padding: 0.75rem 1.5rem;
+
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+
+    font-weight: bold;
+    color: var(--white);
+    background-color: transparent;
+}
+
+#primary {
+    background-color: var(--light-gold);
+    color: var(--navy);
+}
+
+.buttons a:hover {
+    background-color: var(--light-blue);
+    color: var(--navy);
+}
+
+#primary:hover {
+    background-color: var(--gold);
+}
+
+/*About*/
+#about {
+    min-height: 300px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+#about .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+#about h2 {
+    color: var(--navy);
+}
+
+#about p {
+    max-width: 600px;
+}
+
+#about .about-image {
+    width: 100%;
+}
+
+#about .about-image img {
+    width: 100%;
+    height: auto;
+}
+
+/*Resume*/
+#resume {
+    min-height: 400px;
+    
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    color: var(--white);
+
+
+    background-color: var(--dark-blue);
+}
+
+#resume h3 {
+    font-size: 2rem;
+    color: var(--white)
+}
+
+#resume h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+#resume .subtitle {
+    color: var(--gold)
+}
+
+#resume h5 {
+    font-size: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+#resume ul li {
+    margin: .5rem;
+}
+/*Contact*/
+#contact {
+    min-height: 300px;
+    
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    color: black;
+}
+
+#contact div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact div a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contact .pretitle {
+    color: var(--navy)
+}
+
+/*footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--navy);
+    color: var(--gray);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+
+footer p {
+    margin: 0;
+}
+
+footer div a {
+    color: var(--gray);
+}
+
+footer div a:hover,
+footer div a:focus {
+    color: var(--light-gold);
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+    /*Navigation Bar*/
+    nav {
+        padding: 1rem 3%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        gap: 1.25rem;
+    }
+
+    nav a {
+        font-weight: 500;
+    }
+
+    nav ul li a {
+        letter-spacing: 0.02em;
+    }
+
+    /*Home*/
+
+    #HeroBanner {
+    min-height: 500px;
+    padding: 40px 6%;
+}
+
+    #home h1 {
+        font-size: 4rem;
+    }
+
+    #home p span {
+        margin: 10px;
+        color: var(--gray);
+    }
+
+    /*About*/
+
+    #about {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    #about .textContainer {
+        flex: 1;
+    }
+
+    #about .about-image {
+        flex: 1;
+        max-width: 350px;
+    }
+
+    /*Footer*/
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+
+/*Desktop*/
+@media (min-width: 992px) {
+
+    /*Navigation Bar*/
+
+    nav {
+        padding: 1rem 6%;
+    }
+
+    nav ul {
+        gap: 2rem;
+    }
+
+    /*Home*/
+
+    #HeroBanner {
+    min-height: 600px;
+    padding: 40px 8%;
+}
+
+    #home h1 {
+        font-size: 5rem;
+    }
+
+    /*About*/
+
+    #about {
+        gap: 4rem;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    #about .about-image {
+        max-width: 500px;
+    }
+
+    /*Resume*/
+
+    #resume {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    /*Contact*/
+
+    #contact {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
+
+/*Dark Color Scheme*/
+
+@media (prefers-color-scheme: dark) {
+
+    #about, #contact {
+        background-color: var(--card-gray);
+        color: var(--white);
+    }
+    
+    #about .pretitle,
+    #contact .pretitle {
+        color: var(--gold);
+    }
+
+    #about h3,
+    #contact h3 {
+        color: var(--white);
+    }
+
+    #about .subtitle,
+    #contact .subtitle {
+        color: var(--gold);
+    }
+
+    #contact p,
+    #contact div a {
+        color: var(--white);
+    }
+}
